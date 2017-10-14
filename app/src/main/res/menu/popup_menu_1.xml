@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item
+            android:id="@+id/menu_type_rxyl"
+            android:orderInCategory="100"
+            app:showAsAction="never"
+            android:title="入学以来">
+        </item>
+        <item
+            android:id="@+id/menu_type_xn"
+            android:orderInCategory="100"
+            app:showAsAction="never"
+            android:title="学年">
+        </item>
+        <item
+            android:id="@+id/menu_type_xq"
+            android:orderInCategory="100"
+            app:showAsAction="never"
+            android:title="学期">
+        </item>
+</menu>

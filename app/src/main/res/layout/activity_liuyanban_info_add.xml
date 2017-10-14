@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="#ebebeb"
+    android:orientation="vertical" >
+    <include layout="@layout/layout_action_bar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_list_item_bg"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/biaoti"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="标题"
+            android:textSize="20sp" >
+        </EditText>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_list_item_bg"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:layout_weight="0.63"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/neirong"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:hint="内容"
+            android:textSize="20sp" >
+        </EditText>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_list_item_bg"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/lyb_save"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text=" 保 存 " />
+
+    </RelativeLayout>
+
+</LinearLayout>

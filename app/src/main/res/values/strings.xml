@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">微大学</string>
+    <string name="fragment_first_list_title">校区热门</string>
+    <string name="fragment_find_lostandfound">失物招领</string>
+    <string name="fragment_find_shop">周边美食</string>
+    <string name="fragment_find_food">周边小铺</string>
+    <string name="fragment_find_secondhand">二手交易</string>
+    <string name="fragment_me_studentId">学号:</string>
+    <string name="fragment_me_classschedule">课程表</string>
+    <string name="fragment_me_reportcard">成绩单</string>
+    <string name="fragment_me_testtime">考试时间</string>
+    <string name="fragment_me_send">我发布的</string>
+    <string name="fragment_me_quit">登出</string>
+    <string name="title_activity_login">登录</string>
+    <string name="login_welcome">欢迎进入</string>
+    <string name="title_activity_lost_and_found_list">LostAndFoundListActivity</string>
+    <string name="detail">详情</string>
+
+</resources>

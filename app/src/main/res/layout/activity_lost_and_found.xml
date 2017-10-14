@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.changshuai.microuniversity.LostAndFoundActivity">
+
+        <include layout="@layout/layout_action_bar"></include>
+
+        <RelativeLayout
+            android:id="@+id/alfr_re_time"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_list_item_bg"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/alfr_tv_temp_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="丢失时间"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/alfr_et_time"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/alfr_tv_temp_time"
+                android:ellipsize="end"
+                android:textColor="#AAAAAA"
+                android:textSize="14sp"
+                android:inputType="text"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/alfr_re_addr"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_list_item_bg"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/alfr_tv_temp_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="丢失地点"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/alfr_et_addr"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/alfr_tv_temp_addr"
+                android:ellipsize="end"
+                android:textColor="#AAAAAA"
+                android:textSize="14sp"
+                android:inputType="text"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/alfr_re_telephone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_list_item_bg"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/alfr_tv_temp_telephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="联系电话"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/alfr_et_telephone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/alfr_tv_temp_telephone"
+                android:ellipsize="end"
+                android:textColor="#AAAAAA"
+                android:textSize="14sp"
+                android:inputType="text"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/alfr_re_thing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_list_item_bg"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/alfr_tv_temp_thing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:text="物品描述"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/alfr_et_thing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:gravity="top"
+                android:inputType="text"
+                android:lines="12"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/alfr_btn_select_publish"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:text="从相册选择一张照片"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/alfr_iv_select_publish"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/screen_background_light_transparent"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/alfr_done"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="发  布"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/alfr_progess"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</LinearLayout>

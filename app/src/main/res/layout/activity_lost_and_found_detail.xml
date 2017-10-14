@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.changshuai.microuniversity.LostAndFoundDetailActivity">
+
+    <include layout="@layout/layout_action_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/lafd_name_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/lafd_description_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lafd_name_detail"
+            android:layout_marginTop="5dp"
+            android:text="description"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/lafd_image_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:layout_below="@+id/lafd_description_detail"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/lafd_btn_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="联系他"/>
+
+</LinearLayout>

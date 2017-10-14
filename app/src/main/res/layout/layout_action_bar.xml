@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#1aad19"
+    android:id="@+id/layout_titlebar"
+    android:layout_height="48dp"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/action_bar_back"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:onClick="back"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/top_bar_back" />
+
+    <TextView
+        android:id="@+id/action_bar_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="微大学"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/action_bar_back"/>
+
+</RelativeLayout>
+
